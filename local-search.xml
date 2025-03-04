@@ -4,11 +4,30 @@
   
   
   <entry>
+    <title>像素漂移 Pixel Shift</title>
+    <link href="/2025/03/05/Pixel-Shift/"/>
+    <url>/2025/03/05/Pixel-Shift/</url>
+    
+    <content type="html"><![CDATA[<h1 id="像素漂移-pixel-shift"><a class="markdownIt-Anchor" href="#像素漂移-pixel-shift"></a> <strong>像素漂移 Pixel Shift</strong></h1><p>大家是不是常常在风光摄影、胶片翻拍等方面因为自己的相机像素量不高而苦恼？希望今天的手动摇摇乐的技巧能够帮助到大家！</p><h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> <strong>效果</strong></h2><p><img src="0.jpg" alt="" /></p><h2 id="前期拍摄工作"><a class="markdownIt-Anchor" href="#前期拍摄工作"></a> <strong>前期拍摄工作</strong></h2><p>有以下两种方式</p><h3 id="手持"><a class="markdownIt-Anchor" href="#手持"></a> 手持</h3><p>保证安全快门（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>∗</mo><mi>f</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{2*f}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.326216em;vertical-align:-0.481108em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mbin mtight">∗</span><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.481108em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>）不糊片，收小光圈，并连续拍摄8张以上的照片。</p><h3 id="三脚架"><a class="markdownIt-Anchor" href="#三脚架"></a> 三脚架</h3><p>启动相机连续拍摄功能，并在拍摄间隔期间轻轻触碰三脚架，但是不要使三脚架及相机移动。</p><h2 id="后期工作"><a class="markdownIt-Anchor" href="#后期工作"></a> <strong>后期工作</strong></h2><p>1）首先打开Photoshop（<a href="https://software.sysu.edu.cn/">中大有正版可以使用</a>），点击左上角 <strong>文件-脚本-将文件载入堆栈</strong>，选择你拍摄的一组照片，不要勾选“自动对齐图层”、“载入图层后创建智能对象”选项；<br /><img src="1.png" alt="" /><br /><img src="2.png" alt="" /><br />2）点击最上面一个图层，并按住<strong>Ctrl</strong>+<strong>Shift</strong>，最后点击最下面的图层，即全选图层；<br />3）点击 <strong>图像-图像大小</strong>，将“调整为”选项调至“自定”，单位改为“百分比”，按照照片张数适当增加比例，“重新采样”选择“邻近（硬边缘）”；<br /><img src="3.png" alt="" /><br />4）点击 <strong>编辑-自动对齐</strong>，自动即可，“镜头校正”、“几何扭曲”不用勾选；<br /><img src="4.png" alt="" /><br /><img src="5.png" alt="" /><br />5）点击 <strong>图层-智能对象-转换为智能对象</strong>，并耐心等待；<br /><img src="6.png" alt="" /><br />6）点击 <strong>图层-智能对象-堆栈模式-平均值</strong>，并耐心等待；<br /><img src="7.png" alt="" /><br />7）可选：具体情况具体分析，若需进行锐化，点击 <strong>滤镜-锐化-智能锐化</strong>，“数量”输入300%、“半径”输入2。<br /><img src="8.png" alt="" /></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>教程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>世纪中大，山高水长</title>
     <link href="/2025/03/04/sysu100/"/>
     <url>/2025/03/04/sysu100/</url>
     
-    <content type="html"><![CDATA[<h1><strong>早安，世纪中大！</strong></h1><p><img src="sysu100.jpg" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="早安世纪中大"><a class="markdownIt-Anchor" href="#早安世纪中大"></a> <strong>早安，世纪中大！</strong></h1><p><img src="sysu100.jpg" alt="" /></p>]]></content>
     
     
     
@@ -27,7 +46,7 @@
     <link href="/2025/03/03/hello-world/"/>
     <url>/2025/03/03/hello-world/</url>
     
-    <content type="html"><![CDATA[<p>欢迎来到<a href="https://noidealess.github.io/">Noidealess</a>!<br>这是一个关于摄影科学与艺术的研讨平台，欢迎大家前来探讨摄影的奥妙！</p>]]></content>
+    <content type="html"><![CDATA[<p>欢迎来到<a href="https://noidealess.github.io/">Noidealess</a>!<br />这是一个关于摄影科学与艺术的研讨平台，欢迎大家前来探讨摄影的奥妙！</p>]]></content>
     
     
     
