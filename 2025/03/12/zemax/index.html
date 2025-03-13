@@ -16,35 +16,45 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Σ">
+  <meta name="author" content="Δ">
   <meta name="keywords" content="">
   
-    <meta name="description" content="像素漂移 Pixel Shift 大家是不是常常在风光摄影、胶片翻拍等方面因为自己的相机像素量不高而苦恼？希望今天的手动摇摇乐的技巧能够帮助到大家！  效果   前期拍摄工作 有以下两种方式  手持 保证安全快门（12∗f\frac{1}{2*f}2∗f1​）不糊片，收小光圈，并连续拍摄8张以上的照片。  三脚架 启动相机连续拍摄功能，并在拍摄间隔期间轻轻触碰三脚架，但是不要使三脚架及相机移动。">
+    <meta name="description" content="本文旨在用最少的知识点呈现一个完整的Zemax镜头专利模拟分析流程。文中专利的获取有很多其他方法，这里仅呈现个人认为较为简单便捷的一条工作流。  安装ZEMAX  安装链接 通过百度网盘分享的文件：ANSYS Ze… 链接:https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1c6drwaMGYwT1Wlh6bGIg3g?pwd&#x3D;xpx3  提取码:xpx3 复制这段内容打开「百度网盘APP 即可获取">
 <meta property="og:type" content="article">
-<meta property="og:title" content="像素漂移 Pixel Shift">
-<meta property="og:url" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/index.html">
+<meta property="og:title" content="零基础zemax入门教程">
+<meta property="og:url" content="http://noidealess.github.io/2025/03/12/zemax/index.html">
 <meta property="og:site_name" content="Noidealess">
-<meta property="og:description" content="像素漂移 Pixel Shift 大家是不是常常在风光摄影、胶片翻拍等方面因为自己的相机像素量不高而苦恼？希望今天的手动摇摇乐的技巧能够帮助到大家！  效果   前期拍摄工作 有以下两种方式  手持 保证安全快门（12∗f\frac{1}{2*f}2∗f1​）不糊片，收小光圈，并连续拍摄8张以上的照片。  三脚架 启动相机连续拍摄功能，并在拍摄间隔期间轻轻触碰三脚架，但是不要使三脚架及相机移动。">
+<meta property="og:description" content="本文旨在用最少的知识点呈现一个完整的Zemax镜头专利模拟分析流程。文中专利的获取有很多其他方法，这里仅呈现个人认为较为简单便捷的一条工作流。  安装ZEMAX  安装链接 通过百度网盘分享的文件：ANSYS Ze… 链接:https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1c6drwaMGYwT1Wlh6bGIg3g?pwd&#x3D;xpx3  提取码:xpx3 复制这段内容打开「百度网盘APP 即可获取">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/0.jpg">
-<meta property="og:image" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/1.png">
-<meta property="og:image" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/2.png">
-<meta property="og:image" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/3.png">
-<meta property="og:image" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/4.png">
-<meta property="og:image" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/5.png">
-<meta property="og:image" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/6.png">
-<meta property="og:image" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/7.png">
-<meta property="og:image" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/8.png">
-<meta property="article:published_time" content="2025-03-04T16:43:50.000Z">
-<meta property="article:modified_time" content="2025-03-13T06:19:54.921Z">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/1.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/2.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/3.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/4.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/5.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/6.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/7.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/8.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/9.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/10.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/11.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/12.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/13.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/14.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/15.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/16.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/17.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/18.png">
+<meta property="og:image" content="http://noidealess.github.io/2025/03/12/zemax/19.png">
+<meta property="article:published_time" content="2025-03-12T12:27:12.000Z">
+<meta property="article:modified_time" content="2025-03-13T06:18:40.782Z">
 <meta property="article:author" content="爱好者">
-<meta property="article:tag" content="高分辨率">
+<meta property="article:tag" content="Zemax">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://noidealess.github.io/2025/03/05/Pixel-Shift/0.jpg">
+<meta name="twitter:image" content="http://noidealess.github.io/2025/03/12/zemax/1.png">
   
   
   
-  <title>像素漂移 Pixel Shift - Noidealess</title>
+  <title>零基础zemax入门教程 - Noidealess</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -212,7 +222,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="像素漂移 Pixel Shift"></span>
+            <span id="subtitle" data-typed-text="零基础zemax入门教程"></span>
           
         </div>
 
@@ -223,8 +233,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-03-05 00:43" pubdate>
-          2025年3月5日 凌晨
+        <time datetime="2025-03-12 20:27" pubdate>
+          2025年3月12日 晚上
         </time>
       </span>
     
@@ -235,7 +245,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          401 字
+          1.5k 字
         
       </span>
     
@@ -246,7 +256,7 @@
         
         
         
-          4 分钟
+          13 分钟
         
       </span>
     
@@ -283,37 +293,81 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">像素漂移 Pixel Shift</h1>
+            <h1 id="seo-header">零基础zemax入门教程</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="像素漂移-pixel-shift"><a class="markdownIt-Anchor" href="#像素漂移-pixel-shift"></a> <strong>像素漂移 Pixel Shift</strong></h1>
-<p>大家是不是常常在风光摄影、胶片翻拍等方面因为自己的相机像素量不高而苦恼？希望今天的手动摇摇乐的技巧能够帮助到大家！</p>
-<h2 id="效果"><a class="markdownIt-Anchor" href="#效果"></a> <strong>效果</strong></h2>
-<p><img src="0.jpg" srcset="/img/loading.gif" lazyload alt="" /></p>
-<h2 id="前期拍摄工作"><a class="markdownIt-Anchor" href="#前期拍摄工作"></a> <strong>前期拍摄工作</strong></h2>
-<p>有以下两种方式</p>
-<h3 id="手持"><a class="markdownIt-Anchor" href="#手持"></a> 手持</h3>
-<p>保证安全快门（<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>∗</mo><mi>f</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{2*f}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.326216em;vertical-align:-0.481108em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mbin mtight">∗</span><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.481108em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>）不糊片，收小光圈，并连续拍摄8张以上的照片。</p>
-<h3 id="三脚架"><a class="markdownIt-Anchor" href="#三脚架"></a> 三脚架</h3>
-<p>启动相机连续拍摄功能，并在拍摄间隔期间轻轻触碰三脚架，但是不要使三脚架及相机移动。</p>
-<h2 id="后期工作"><a class="markdownIt-Anchor" href="#后期工作"></a> <strong>后期工作</strong></h2>
-<p>1）首先打开Photoshop（<a target="_blank" rel="noopener" href="https://software.sysu.edu.cn/">中大有正版可以使用</a>），点击左上角 <strong>文件-脚本-将文件载入堆栈</strong>，选择你拍摄的一组照片，不要勾选“自动对齐图层”、“载入图层后创建智能对象”选项；<br />
-<img src="1.png" srcset="/img/loading.gif" lazyload alt="" /><br />
-<img src="2.png" srcset="/img/loading.gif" lazyload alt="" /><br />
-2）点击最上面一个图层，并按住<strong>Ctrl</strong>+<strong>Shift</strong>，最后点击最下面的图层，即全选图层；<br />
-3）点击 <strong>图像-图像大小</strong>，将“调整为”选项调至“自定”，单位改为“百分比”，按照照片张数适当增加比例，“重新采样”选择“邻近（硬边缘）”；<br />
-<img src="3.png" srcset="/img/loading.gif" lazyload alt="" /><br />
-4）点击 <strong>编辑-自动对齐</strong>，自动即可，“镜头校正”、“几何扭曲”不用勾选；<br />
-<img src="4.png" srcset="/img/loading.gif" lazyload alt="" /><br />
-<img src="5.png" srcset="/img/loading.gif" lazyload alt="" /><br />
-5）点击 <strong>图层-智能对象-转换为智能对象</strong>，并耐心等待；<br />
-<img src="6.png" srcset="/img/loading.gif" lazyload alt="" /><br />
-6）点击 <strong>图层-智能对象-堆栈模式-平均值</strong>，并耐心等待；<br />
-<img src="7.png" srcset="/img/loading.gif" lazyload alt="" /><br />
-7）可选：具体情况具体分析，若需进行锐化，点击 <strong>滤镜-锐化-智能锐化</strong>，“数量”输入300%、“半径”输入2。<br />
-<img src="8.png" srcset="/img/loading.gif" lazyload alt="" /></p>
+                <p>本文旨在用最少的知识点呈现一个完整的Zemax镜头专利模拟分析流程。文中专利的获取有很多其他方法，这里仅呈现个人认为较为简单便捷的一条工作流。</p>
+<h1 id="安装zemax"><a class="markdownIt-Anchor" href="#安装zemax"></a> 安装ZEMAX</h1>
+<h2 id="安装链接"><a class="markdownIt-Anchor" href="#安装链接"></a> 安装链接</h2>
+<p>通过百度网盘分享的文件：ANSYS Ze…<br />
+链接:<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1c6drwaMGYwT1Wlh6bGIg3g?pwd=xpx3">https://pan.baidu.com/s/1c6drwaMGYwT1Wlh6bGIg3g?pwd=xpx3</a> <br />
+提取码:xpx3<br />
+复制这段内容打开「百度网盘APP 即可获取」</p>
+<h2 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h2>
+<p>1、卸载旧版本，特别是ANSYS License Manager；<br />
+2、安装ANSYS License Manager 2024；<br />
+3、复制破解文件夹Shared Files和v241到软件安装目录覆盖原文件：C:\Program Files\Ansys Inc\<br />
+4、运行开始菜单中的：ANSYS, Inc. License Manager &gt; ANSYS License Manager &gt; ANSYS License Management Center，点击“Get System Hostid Information”<br />
+5、用记事本打开“license.txt”，将其中的XXXXXXXXXX替换上一步得到的HOSTID<br />
+6、第4步打开的ANSYS License Management Center中点击&quot;Add a License File&quot; &gt; “Choose File” ，浏览添加上一步修改的license.txt，然后点击INSTALL LICENSE FILE；<br />
+7、双击运行“SolidSQUADLoaderEnabler.reg”导入注册表信息；<br />
+8、右键我的电脑(计算机/此电脑)—属性—高级系统设置—环境变量，创建系统环境变量；</p>
+<ol>
+<li>变量名：ANSYSLMD_LICENSE_FILE</li>
+<li>变量值：1055@localhost  <br />
+9、重启系统<br />
+10、安装ANSYS Zemax OpticStudio 2024；<br />
+11、安装Ansys_Optics_Launcher_2024R1；<br />
+12、复制破解文件夹ANSYS Optics和到软件安装目录替换原文件：C:\Program Files\Ansys Inc\<br />
+13、复制破解文件夹Ansys Zemax OpticStudio 2024 R1.00和到软件安装目录替换原文件：C:\Program Files\<br />
+14、ANSYS Zemax OpticStudio 2024 破解完成。</li>
+</ol>
+<h1 id="镜头专利获取"><a class="markdownIt-Anchor" href="#镜头专利获取"></a> 镜头专利获取</h1>
+<ol>
+<li>打开<a target="_blank" rel="noopener" href="https://www.photonstophotos.net/GeneralTopics/Lenses/OpticalBench/OpticalBenchHub.htm">Optical Bench Hub (photonstophotos.net)</a>。</li>
+<li>在库里找到自己想要模拟的镜头。<br />
+<img src="1.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>这里以Canon EF 50mm f/1.0L USM为例进行示范。点击镜头名称进入详情页面，复制其&quot;Title&quot;后面的Patent ID为&quot;US 4,717,245&quot;.<br />
+<img src="2.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>使用<a target="_blank" rel="noopener" href="https://patents.google.com/">Google Patents</a>等专利搜索工具搜索对应的Patent ID. 这里搜索到了完全匹配的结果，标题为“High relative aperture Gauss type lens”。注意，镜头专利的标题不会直接标明镜头的商业名称。点击Download PDF下载该镜头的专利文件。<br />
+<img src="3.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>观察刚刚Optical Hub页面Title后面给出的信息，符合实物的专利实施例是Example 2。在下载的PDF里面找到Example 2的数据。此即该镜头对应的光学专利。一些镜头会有完全匹配的专利，而另一些可能会与实物有些许出入。此时就需要自行在Zemax里进行优化。<br />
+<img src="4.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+</ol>
+<h1 id="zemax模拟专利"><a class="markdownIt-Anchor" href="#zemax模拟专利"></a> Zemax模拟专利</h1>
+<ol>
+<li>仍然以上文提到的Canon EF 50mm f/1.0L USM为例。首先打开Zemax License Management Center，点击绿色的start。如果已经显示&quot;The license manager is running&quot;则不需要操作。<br />
+<img src="5.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>打开Ansys Zemax OpticStudio。如果需要中文界面，点击Setup-Opticstudio Preferences-General-Language 改成中文界面。现在的界面应该如图所示。<br />
+<img src="6.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>设置基本的光学信息。我们模拟的镜头光圈为f/1.0，在界面左侧的系统孔径一栏设置相应的参数。<br />
+<img src="7.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>设置视场信息。视场信息相当于模拟传感器上取样的点，即我们希望观察这个镜头在成像面上哪个位置的信息。此处该镜头为全画幅镜头，而全画幅传感器对角线大约为43.2mm，所以我们只需要关注距离中心0~21.6mm的信息即可。打开视场数据编辑器，类型选择实际像高，在Y一栏打上6个观测点，如图所示。<br />
+<img src="8.png" srcset="/img/loading.gif" lazyload alt="" /><br />
+<img src="9.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>继续设置波长信息。波长信息代表的是我们使用什么样的波长的光线来模拟我们的光学系统。选为“F,d,C(可见)”或者&quot;明视觉&quot;即可。<br />
+<img src="10.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>现在输入专利中的信息。专利中每一个序号代表一个光学面的信息，其中<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>代表这个面的曲率半径， <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>代表这个面的厚度，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span>代表这个面后介质的折射率，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span></span></span>代表阿贝数（衡量色散的大小）。可以观察到一共有21个光学面。其中<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>后面如果显示Asperical，代表此面镜片是非球面镜片，其具体参数要在下面寻找。在最下方的非球面镜片参数中，ABCDE分别代表偶次非球面系数（分别是2、4、6、8、10阶的系数）。“Stop”代表这一面是光圈所在的位置。<br />
+<img src="11.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>在Zemax的“镜头数据”中随便单击一个单元格，使用Ins快捷键或者“右键-插入表面”，直到光学面的总数为21，此时应该一共有23个面的数据（21个光学面+像面+物面）。依次输入专利中的数据。如果是光学表面是标准球面或者是光圈所在位置，在表面类型选择“标准面”。如果是非球面，在前面选择“偶次非球面”。如果该表面是光圈，双击该表面所在行，在上放的下拉菜单中设置“使此表面为光阑”。<br />
+<img src="12.png" srcset="/img/loading.gif" lazyload alt="" /><br />
+<img src="13.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>输入材料时，点击每个材料单元格右边的小方格，选择“模型”，然后输入对应的折射率和阿贝数。<br />
+<img src="14.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>非球面镜片的参数按顺序输入表格最右边。<br />
+<img src="15.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>现在设置基本的像面信息。注意到专利数据中<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mn>21</mn></mrow><annotation encoding="application/x-tex">R21</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord">2</span><span class="mord">1</span></span></span></span>表面（即最后一个光学面）是没有给厚度的。这里厚度的意义就是最后一片镜片到传感器的距离。点击上方菜单-优化-快速聚焦，可以自动计算出合焦时的距离。<br />
+<img src="16.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>点击设置-2D视图，可以看到此时镜头的结构图，可以将其与官方的结构图对比。<br />
+<img src="17.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>点击“分析”菜单，即可查看各种光学像差图。<br />
+<img src="18.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>以MTF为例，示例效果如下。其他光学像差也可以自行查看。<br />
+<img src="19.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<li>关于各光学像差的意义和分析超出了本文的范围，可以自行参考网上教程或教科书。推荐教程：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/635741951">像差图怎么看：关于我的Zemax截图的简要介绍 - 知乎 (zhihu.com)</a>，<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/640498704">如何看懂我的ZEMAX专利模拟 - 知乎 (zhihu.com)</a>。</li>
+</ol>
 
                 
               </div>
@@ -335,6 +389,13 @@
   <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
   
   
+    <span>></span>
+    
+  <a href="/categories/%E6%95%99%E7%A8%8B/%E5%85%89%E5%AD%A6%E8%AE%BE%E8%AE%A1/" class="category-chain-item">光学设计</a>
+  
+  
+
+  
 
       </span>
     
@@ -347,7 +408,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E9%AB%98%E5%88%86%E8%BE%A8%E7%8E%87/" class="print-no-link">#高分辨率</a>
+        <a href="/tags/Zemax/" class="print-no-link">#Zemax</a>
       
     </div>
   
@@ -359,20 +420,20 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>像素漂移 Pixel Shift</div>
-      <div>http://noidealess.github.io/2025/03/05/Pixel-Shift/</div>
+      <div>零基础zemax入门教程</div>
+      <div>http://noidealess.github.io/2025/03/12/zemax/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>Σ</div>
+          <div>Δ</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年3月5日</div>
+          <div>2025年3月12日</div>
         </div>
       
       
@@ -404,9 +465,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/03/05/colorful-ground/" title="多彩的地毯">
+                      <a href="/2025/03/12/bokeh-revisited/" title="bokeh_revisited">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">多彩的地毯</span>
+                        <span class="hidden-mobile">bokeh_revisited</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -414,8 +475,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/03/04/sysu100/" title="世纪中大，山高水长">
-                        <span class="hidden-mobile">世纪中大，山高水长</span>
+                      <a href="/2025/03/05/colorful-ground/" title="多彩的地毯">
+                        <span class="hidden-mobile">多彩的地毯</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
