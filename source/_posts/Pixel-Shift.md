@@ -2,7 +2,8 @@
 layout: '[layout]'
 title: 像素漂移 Pixel Shift
 date: 2025-03-05 00:43:50
-tags: [教程]
+tags: [高分辨率]
+categories: [教程]
 author: Σ
 ---
 # **像素漂移 Pixel Shift**
