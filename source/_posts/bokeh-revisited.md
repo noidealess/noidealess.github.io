@@ -2,7 +2,9 @@
 layout: '[layout]'
 title: 再论虚化
 date: 2025-03-12 21:32:49
-tags:
+tags: [虚化, 理论推导]
+categories: [理论推导]
+author: Δ
 ---
 # 理论推导：表观虚化
 我们有薄透镜成像公式
