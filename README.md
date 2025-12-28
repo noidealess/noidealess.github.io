@@ -7,7 +7,7 @@
 5.在git bash中输入`ssh-keygen -t rsa -C "xxx@xxx.com"  // 将 "xxx@xxx.com" 替换为你自己GitHub的邮箱地址`  
 输入`cd ~/.ssh` `cat id_rsa.pub`，打开GitHub点击头像进入settings，打开SSH and GPG keys，并点击New SSH key，粘贴刚刚复制的内容，回到git bash输入`ssh -T git@github.com`出现successfully即可；  
 6.在你要部署noidealess的文件夹处右键并打开git bash，输入`git clone https://github.com/noidealess/noidealess.github.io.git`即可；  
-7.下载完成后，输入以下命令`npm install` `npm install hexo-all-minifier --save` `npm install hexo` `npm install hexo-deployer-git`（无需输入hexo init）；  
+7.下载完成后，输入以下命令`npm install` `npm install hexo` `npm install hexo-deployer-git` `npm install hexo-all-minifier --save`（无需输入hexo init）；  
 8.输入`hexo clean &&hexo g&&hexo s`即可在本地访问你的noidealess（可供调试使用）；  
 9.输入`hexo new [layout] 标题`可以自动在/source/_post创建文档，其中与标题同名的文件夹是资源文件夹，如需调用图片，请输入`![](某某.jpg)`；  
 10.调试完成后输入`hexo d`可以提交更新网页；  
