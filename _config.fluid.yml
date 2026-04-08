@@ -230,7 +230,7 @@ color:
 # Font
 font:
   font_size: 16px
-  font_family:
+  font_family: "Noto Serif SC"
   letter_spacing: 0.02em
   code_font_size: 85%
 
