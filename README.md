@@ -15,7 +15,7 @@
 12.开发或写文章前请输入`git pull`以拉取。  
 
 ---
-##更新hexo和主题
+## 更新hexo和主题
 依次输入`npm-upgrade``npm update --save``hexo -v`
 若显示最新版本号即可
 
