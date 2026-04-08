@@ -853,7 +853,7 @@ waline:
 'https://unpkg.com/@waline/emojis@1.4.0/weibo',
 'https://unpkg.com/@waline/emojis@1.4.0/soul-emoji']
   dark: 'html[data-user-color-scheme="dark"]'
-  wordLimit: 0
+  wordLimit: 1000
   pageSize: 10
 
 # 畅言 Changyan
