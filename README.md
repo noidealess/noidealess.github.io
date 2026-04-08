@@ -13,10 +13,12 @@
 10.调试完成后输入`hexo d`可以提交更新网页；  
 11.提交后请输入`git add .` `git commit -m "v几点几  //版本号，规范为v2025.3.14，若当天更新超过一版，则后续为v2025.3.14.1或更后"` `git push origin hexo`与github同步进度；  
 12.开发或写文章前请输入`git pull`以拉取。  
+
 ---
 ##更新hexo和主题
 依次输入`npm-upgrade``npm update --save``hexo -v`
 若显示最新版本号即可
+
 ---
 如有问题请先尝试重启，无法解决请联系群u。  
 若有ssh:connect to host github.com port 22:Connection refused，请查看[https://zhuanlan.zhihu.com/p/521340971]  
