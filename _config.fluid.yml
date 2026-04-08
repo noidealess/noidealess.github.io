@@ -1123,7 +1123,7 @@ static_prefix:
 
   katex: https://lib.baomitu.com/KaTeX/0.16.2/
 
-  busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
+  busuanzi: https://cdnjs.cloudflare.com/ajax/libs/busuanzi/2.3.0/
 
   clipboard: https://lib.baomitu.com/clipboard.js/2.0.11/
 
