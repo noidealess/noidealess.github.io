@@ -457,7 +457,7 @@ footer:
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
   statistics:
-    enable: true
+    enable: false
 
     # 统计数据来源，使用 leancloud, umami 需要设置 `web_analytics` 中对应的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
     # Data source. If use leancloud, umami, you need to set the parameter in `web_analytics`
@@ -1123,7 +1123,7 @@ static_prefix:
 
   katex: https://lib.baomitu.com/KaTeX/0.16.2/
 
-  busuanzi: https://cdnjs.cloudflare.com/ajax/libs/busuanzi/2.3.0/
+  busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
 
   clipboard: https://lib.baomitu.com/clipboard.js/2.0.11/
 
