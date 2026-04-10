@@ -16,7 +16,7 @@
 
 ---
 ## 更新hexo和主题
-依次输入`npm-upgrade``npm update --save``hexo -v`
+依次输入`npm i hexo-cli -g` `npm install -g npm-check` `npm-check` `npm install -g npm-upgrade` `npm-upgrade` `npm update --save` `npm update --save hexo-theme-fluid` `hexo -v`
 若显示最新版本号即可
 
 ---
