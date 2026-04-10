@@ -1,5 +1,4 @@
 ---
-layout: '[layout]'
 title: 世纪中大，山高水长
 date: 2025-03-04 13:32:15
 tags: [中大]

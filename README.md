@@ -9,7 +9,7 @@
 6.在你要部署noidealess的文件夹处右键并打开git bash，输入`git clone https://github.com/noidealess/noidealess.github.io.git`即可；  
 7.下载完成后，输入以下命令`npm install` `npm install hexo` `npm install hexo-deployer-git` `npm install hexo-all-minifier --save`（无需输入hexo init）；  
 8.输入`hexo clean &&hexo g&&hexo s`即可在本地访问你的noidealess（可供调试使用）；  
-9.输入`hexo new [layout] 标题`可以自动在/source/_post创建文档，其中与标题同名的文件夹是资源文件夹，如需调用图片，请输入`![](某某.jpg)`；  
+9.输入`hexo new 标题`可以自动在/source/_post创建文档，其中与标题同名的文件夹是资源文件夹，如需调用图片，请输入`![](某某.jpg)`；  
 10.调试完成后输入`hexo d`可以提交更新网页；  
 11.提交后请输入`git add .` `git commit -m "v几点几  //版本号，规范为v2025.3.14，若当天更新超过一版，则后续为v2025.3.14.1或更后"` `git push origin hexo`与github同步进度；  
 12.开发或写文章前请输入`git pull`以拉取。  

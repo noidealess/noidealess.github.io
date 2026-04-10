@@ -1,5 +1,4 @@
 ---
-layout: '[layout]'
 title: 多彩的地毯
 date: 2025-03-05 01:14:18
 tags: [落叶]

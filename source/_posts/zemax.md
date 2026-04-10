@@ -1,5 +1,4 @@
 ---
-layout: '[layout]'
 title: 零基础zemax入门教程
 date: 2025-03-12 20:27:12
 categories: [教程,光学设计]

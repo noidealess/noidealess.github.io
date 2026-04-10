@@ -1,5 +1,4 @@
 ---
-layout: '[layout]'
 title: 像素漂移 Pixel Shift
 date: 2025-03-05 00:43:50
 tags: [高分辨率]

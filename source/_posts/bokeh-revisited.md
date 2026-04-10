@@ -1,9 +1,8 @@
 ---
-layout: '[layout]'
 title: 再论虚化
 date: 2025-03-12 21:32:49
-tags: [虚化, 理论推导]
-categories: [理论推导]
+tags: [虚化, 理论推导, 科普]
+categories: [科普, 理论推导]
 author: Δ
 ---
 # 理论推导：表观虚化
