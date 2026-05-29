@@ -4,16 +4,16 @@
 
 # Site
 title: Noidealess
-subtitle: ''
-description: ''
-keywords:
+subtitle: '摄影的科学与艺术'
+description: '分享风光接片、像素漂移、虚化原理、大光圈成像与落叶、中大校园等摄影实践，以及零基础 Zemax 光学设计入门教程。'
+keywords: 摄影,风光摄影,接片,像素漂移,虚化,大光圈,落叶,中山大学,Zemax,光学设计,摄影教程
 author: 爱好者
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://noidealess.github.io
+url: https://noidealess.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

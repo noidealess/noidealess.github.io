@@ -3,6 +3,7 @@ title: 玩转大光圈镜头：用对焦和光圈控制成像风格
 date: 2026-04-09 18:55:15
 tags: [科普]
 categories: [科普]
+description: 讲解如何用大光圈镜头的对焦与光圈控制来塑造成像风格。
 banner_img: /banner/mastering-the-fast-lens.png
 author: Δ
 ---
