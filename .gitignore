@@ -7,4 +7,6 @@ public/
 .deploy*/
 _multiconfig.yml
 .omc/
-.claude/
+# Keep machine-local Claude Code files out, but SHARE the project skills.
+.claude/*
+!.claude/skills/
