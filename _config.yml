@@ -108,3 +108,8 @@ deploy:
 markdown:
   plugins:
     - "@traptitech/markdown-it-katex"
+
+# Hexo-all-minifier configuration
+# Disable all minifiers globally for hexo build/generate to ensure fast local startups.
+# Lossless image optimization is handled via the deployment scripts in `.agents/skills/new-post/scripts/optimize-images.sh`.
+all_minifier: false
